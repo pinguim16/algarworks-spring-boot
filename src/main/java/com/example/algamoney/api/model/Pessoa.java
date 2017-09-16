@@ -15,6 +15,11 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table(name = "pessoa")
 public class Pessoa {
 	
+	public static final String CODIGO = "codigo";
+	public static final String NOME = "nome";
+	public static final String ATIVO = "ativo";
+	public static final String ENDERECO = "endereco";
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long codigo;
